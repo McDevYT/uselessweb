@@ -1,9 +1,10 @@
 :root {
-  --color-primary: #F05941; 
-  --color-background: #22092C; 
-  --color-button-pressed: #22092C; 
-  --color-button-hover: #22092C; 
-  --color-font: #872341; 
+  --color-primary: #f05941;
+  --color-background: #150d18;
+  --color-button-pressed: #be3144;
+  --color-button-hover: #f18372;
+  --color-heading: #f8c2d2;
+  --color-font: #ffffff;
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -13,24 +14,18 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
-  max-width: 1280px;
-  margin: 0 auto;
-  text-align: center;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-primary: #F05941; 
-    --color-background: #150d18; 
-    --color-button-pressed: #BE3144; 
-    --color-button-hover: #f18372; 
-    --color-heading: #f8c2d2; 
-    --color-font: #ffffff; 
-
+    --color-primary: #f05941;
+    --color-background: #150d18;
+    --color-button-pressed: #be3144;
+    --color-button-hover: #f18372;
+    --color-heading: #f8c2d2;
+    --color-font: #ffffff;
   }
 }
-
 
 h1 {
   font-size: 3.2em;
@@ -38,17 +33,19 @@ h1 {
   color: var(--color-heading);
 }
 
-p,a,button{
-  
+p,
+a,
+button {
   color: var(--color-font);
 }
 
+html,
 body {
+  height: 100%;
+  width: 100%;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+  overflow: hidden;
 
   background-color: var(--color-background);
 }

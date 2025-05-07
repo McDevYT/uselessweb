@@ -1,0 +1,35 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.home-button {
+  background: var(--color-primary);
+  border: none;
+  border-radius: 15px;
+  font-size: 2em;
+  width: 7em;
+  height: 2em;
+
+  transition: all 0.05s ease-in-out;
+}
+
+.home-button:hover {
+  background: var(--color-button-hover);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.home-button:active {
+  background: var(--color-button-pressed);
+  cursor: pointer;
+  transform: scale(0.95);
+}
