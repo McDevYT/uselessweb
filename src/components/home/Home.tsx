@@ -18,6 +18,25 @@ function Home() {
       >
         Random Site
       </button>
+
+      <div className="home-links">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://mcdevyt.com/"
+        >
+          Who Made it?
+        </a>
+        <a> - </a>
+
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdi3diYjVPA_fmDRFKTzKJ2jf9Z6oMPV2xDc1Qt1eQlENSu4g/viewform?usp=dialog"
+        >
+          Submit
+        </a>
+      </div>
     </div>
   );
 }

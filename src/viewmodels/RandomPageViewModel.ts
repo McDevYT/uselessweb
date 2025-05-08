@@ -90,20 +90,27 @@ var sitesList = [
   "https://optical.toys/troxler-fade/",
   "https://dadlaughbutton.com/",
   "https://remoji.com/",
-  "http://papertoilet.com/",
   "https://loopedforinfinity.com/",
   "https://www.ripefordebate.com/",
   "https://elonjump.com/",
   "https://memory.toys/monkey-challenge/easy/",
   "https://memory.toys",
+  // Found on my own
+  "https://color.method.ac/",
+  "https://ffffidget.com/",
+  "https://2048.io/",
+  "https://screamintothevoid.com/",
+  "https://29a.ch/sandbox/2011/neonflames/",
+  "https://www.fallingfalling.com/",
+  "https://cat-bounce.com/message/",
+
+  // Made by me
 ];
 
 export function useRandomPageViewModel() {
   const [currentPage, setCurrentPage] = useState<string>(
     sitesList[Math.floor(Math.random() * sitesList.length)]
   );
-  const [currentPageSimple, setCurrentPageSimple] =
-    useState<string>("mcdevyt.com");
 
   function openRandomPage() {
     setCurrentPage(sitesList[Math.floor(Math.random() * sitesList.length)]);
@@ -116,5 +123,16 @@ export function useRandomPageViewModel() {
     }
   }
 
-  return { currentPage, openRandomPage, openCurrentPageInNewTab };
+  function getSimplifiedLink(): string {
+    const url = new URL(currentPage);
+    const path = url.pathname;
+    return url.hostname + (path.endsWith("/") ? path.slice(0, -1) : path);
+  }
+
+  return {
+    currentPage,
+    openRandomPage,
+    openCurrentPageInNewTab,
+    getSimplifiedLink,
+  };
 }

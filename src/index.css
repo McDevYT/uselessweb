@@ -1,6 +1,7 @@
 :root {
   --color-primary: #f05941;
   --color-background: #150d18;
+  --color-text-primary: #f8a89c;
   --color-button-pressed: #be3144;
   --color-button-hover: #f18372;
   --color-heading: #f8c2d2;
@@ -19,6 +20,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --color-primary: #f05941;
+    --color-text-primary: #f8a89c;
+    --color-text-hover: #eb6651;
     --color-background: #150d18;
     --color-button-pressed: #be3144;
     --color-button-hover: #f18372;
@@ -33,8 +36,15 @@ h1 {
   color: var(--color-heading);
 }
 
+a {
+  color: var(--color-text-primary);
+}
+
+a:hover {
+  color: var(--color-text-hover);
+}
+
 p,
-a,
 button {
   color: var(--color-font);
 }

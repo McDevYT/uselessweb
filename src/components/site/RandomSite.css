@@ -34,3 +34,7 @@ iframe {
   cursor: pointer;
   transform: scale(0.95);
 }
+
+#link {
+  text-decoration: none;
+}

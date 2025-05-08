@@ -3,7 +3,8 @@ import { useRandomPageViewModel } from "../../viewmodels/RandomPageViewModel";
 import "./RandomSite.css";
 
 function RandomSite() {
-  const { currentPage, openRandomPage } = useRandomPageViewModel();
+  const { currentPage, openRandomPage, getSimplifiedLink } =
+    useRandomPageViewModel();
 
   const frame = useRef(null);
 
@@ -18,7 +19,14 @@ function RandomSite() {
         >
           Random Page
         </button>
-        <a>{currentPage}</a>
+        <a
+          id="link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href={currentPage}
+        >
+          {getSimplifiedLink()}
+        </a>
       </div>
       <iframe ref={frame} src={currentPage}></iframe>
     </div>
