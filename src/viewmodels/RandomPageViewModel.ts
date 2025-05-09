@@ -59,7 +59,6 @@ var sitesList = [
   "https://www.trashloop.com/",
   "https://www.doublepressure.com/",
   "https://optical.toys/thatcher-effect/",
-  "https://wowenwilsonquiz.com",
   "https://notdayoftheweek.com/",
   "https://number.toys/",
   "https://greatbignothing.com/",
