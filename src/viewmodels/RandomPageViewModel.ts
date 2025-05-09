@@ -67,7 +67,6 @@ var sitesList = [
   "https://memory.toys/maze/easy/",
   "https://boringboringboring.com/",
   "http://www.patience-is-a-virtue.org/",
-  "http://isitwhite.com/",
   "https://existentialcrisis.com/",
   "http://www.omfgdogs.com/",
   "http://oct82.com/",
@@ -84,7 +83,6 @@ var sitesList = [
   "http://notdayoftheweek.com/",
   "https://number.toys/",
   "https://card.toys",
-  "http://www.amialright.com/",
   "https://greatbignothing.com/",
   "https://zoomquilt.org/",
   "https://optical.toys/troxler-fade/",
@@ -95,7 +93,7 @@ var sitesList = [
   "https://elonjump.com/",
   "https://memory.toys/monkey-challenge/easy/",
   "https://memory.toys",
-  // Found on my own
+  // ...
   "https://color.method.ac/",
   "https://ffffidget.com/",
   "https://2048.io/",
@@ -104,7 +102,7 @@ var sitesList = [
   "https://www.fallingfalling.com/",
   "https://cat-bounce.com/message/",
 
-  // Made by me
+  // ...
 ];
 
 export function useRandomPageViewModel() {
